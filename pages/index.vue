@@ -1,21 +1,21 @@
 <template>
-  <div>
-    <Head>
-      <Title>Home page</Title>
-      <Meta
-        name="description"
-        content="This is a home page of this site"
-      ></Meta>
-    </Head>
-
-    <div v-for="(factory, index) in factoryes">
-      <Factory :factory="factory" />
+  <GameLayout>
+    <div>
+      <Head>
+        <Title>Home page</Title>
+        <Meta
+          name="description"
+          content="This is a home page of this site"
+        ></Meta>
+      </Head>
+      1
     </div>
-  </div>
+  </GameLayout>
 </template>
 
 <script setup lang="ts">
 import type { Factory, Product, WorkersGroup } from "~/domain/Factory";
+import GameLayout from "~/layouts/GameLayout.vue";
 
 const money = ref<number>(100);
 
